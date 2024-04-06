@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="Style/main.css" />
+    <script src="JS/main.js"></script>
+</head>
+<body>
+ 
+    <div class="m">
+        <div class="s">Шапка</div>   
+
+    <div >
+         <h4 style="text-align: center; color: aqua;">       
+             Canvas
+            Доступ к canvas и рисование прямоугольников
+        </h4>
+        <p style="text-align: justify; ">
+        Одним из нововведений HTML5 стал элемент Canvas и продвинутые возможности по работе и манипуляции графикой.
+        С помощью canvas можно рисовать как простейшие графические примитивы - линии, фигуры, текст, так и создавать 
+        сложные графические игры. В дополнение canvas позволяет манипулировать изображениями и даже видео.
+        Определим на веб-странице элемент canvas:
+        </p>
+
+
+<xmp>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Canvas в HTML5</title>
+</head>
+<body>
+<canvas id="myCanvas" width="300" height="200">
+ Ваш браузер не поддерживает Canvas
+</canvas>
+</body>
+</html>
+</xmp>
+
+    </div> 
+            <div class="d">
+                <Fieldset>
+                    <legend>Рисование квадрата</legend>
+                   
+                      <canvas id="myCanvas" width="270" height="400" style="background-color:#aaa;" ></canvas>  
+                  
+                  <table>
+                      <tr>
+                          <td>
+                              x= 
+                          </td>
+                          <td>
+                              <input type="number" id="xT" value="10">
+                          </td>
+                          <td>
+                              y= 
+                          </td>
+                          <td>
+                              <input type="number" id="yT" value="10">
+                          </td>        
+                      </tr>
+                      <tr>
+                          <td>
+                              w=
+                          </td>
+                          <td>
+                              <input type="number" id="wT" value="100">
+                          </td>
+                          <td>
+                              h=  
+                          </td>
+                          <td>
+                              <input type="number" id="hT" value="50">
+                          </td>        
+                      </tr>
+                      <tr>
+                          <td>
+                              Цвет
+                          </td>
+                          <td>
+                              <input type="color" id="favcolor" name="favcolor" />
+                          </td>
+                          <td>
+                          
+                          </td>
+                          <td>
+                              
+                          </td>        
+                      </tr>
+                      <tr>
+                              <td></td>
+                              <td></td>
+                          <td colspan="2">
+                            <input type="button" value="strokeRect(x, y, w, h)" onclick="_strokeRect()" class="button">
+                          </td>           
+                      </tr>  
+                      <tr>
+                              <td></td>
+                              <td></td>
+                          <td colspan="2">
+                            <input type="button" value="fillRect(x, y, w, h)" onclick="_fillRect()" class="button">
+                          </td>           
+                      </tr>  
+                      <tr>
+                              <td></td>
+                              <td></td>
+                          <td colspan="2">
+                            <input type="button" value="clearRect(x, y, w, h)" onclick="_clearRect()" class="button">
+                          </td>           
+                      </tr>   
+                      
+                  </table>
+                  </Fieldset>             
+            </div>
+
+            <div class="d">
+                <Fieldset>
+                    <legend>Теория</legend>
+                 <span>Рисование прямоугольников</span>
+                 <p>
+                   Для рисования простейших фигур - прямоугольников нам могут понадобиться три метода:
+                 </p>
+                <ul>
+                  <li><span>clearRect(x, y, w, h):</span> 
+                    очищает определенную прямоугольную область, верхний левый угол которой имеет координаты <span>x</span> и <span>y</span>, ширина равна <span>w</span>, а высота равна <span>h</span>
+                  </li>
+                  <li><span>fillRect(x, y, w, h):</span> 
+                    заливает цветом прямоугольник, верхний леый угол которого имеет координаты <span>x</span> и <span>y</span>, ширина равна <span>w</span>, а высота равна <span>h</span>
+                  </li>
+                  <li><span>strokeRect(x, y, w, h):</span> 
+                    рисует контур прямоугольника без заливки его каким-то определенным цветом
+                  </li> 
+                </ul>
+                </Fieldset> 
+            </div>            
+        <div class="p">Подвал</div>
+    </div>
+</body>
+</html>
